@@ -1,0 +1,57 @@
+\documentclass[notitlepage]{article}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{braket} %Cuantica
+\author{David Cardozo}
+\title{Notas de Clase sobre Computación Cuántica}
+\newtheorem{define}{Definición}
+\newtheorem{thm}{Teorema}
+\newtheorem{lemma}{Lema}
+
+\newtheorem{prop}{Proposición}
+\newtheorem{exm}{Ejemplo}
+
+
+\usepackage{mdframed} %frames around examples 
+
+%Commands
+%Customized Commands
+\newcommand{\lrp}[1]{\left( #1 \right)}
+\newcommand{\abs}[1]{\left| #1 \right|}
+\renewcommand{\set}[1]{\left\lbrace #1 \right\rbrace}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\QQ}{\mathbb{Q}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\ZN}[1]{\frac{\mathbb{Z}}{#1 \mathbb{Z}}}
+\newcommand{\PP}{\mathbb{P}}
+\newcommand{\qt}[1]{\textrm{#1}}
+\newcommand{\function}[3]{#1 : #2 \rightarrow #3}
+\newcommand{\contained}{\subseteq}
+\newcommand{\restric}[2]{ #1\restriction_{#2}}
+\newcommand{\divs}{\mid}
+\newcommand{\ndivs}{\nmid}
+
+\begin{document}
+
+
+\input{Header}
+\input{Organization}
+
+\noindent\rule{\textwidth}{1pt}\\[-0.1cm]
+\input{Class01}
+
+\noindent\rule{\textwidth}{1pt}\\[-0.1cm]
+
+\input{Class03}	
+
+\noindent\rule{\textwidth}{1pt}\\[-0.1cm]
+\input{class04}
+
+\end{document}
