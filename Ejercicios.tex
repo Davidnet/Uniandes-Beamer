@@ -9,12 +9,12 @@
 \usepackage{amssymb}
 \usepackage{graphicx}
 \usepackage{hyperref}
-\author{Prof. Sebastian Saiibi \& David Cardozo\inst{1}}
+\author{Prof. Sebastian Saaibi \& David Cardozo\inst{1}}
 % - Give the names in the same order as the appear in the paper.
 % - Use the \inst{?} command only if the authors have different
 %   affiliation.
-\title{Introducción a \LaTeXe }
-\subtitle{Practicas, Hojas de Vida, Reprotes de Laboratorio} % A subtitle is optional and this may be deleted
+\title{Temas Avanzados de  \LaTeXe }
+\subtitle{Ecuaciones avanzadas, Bib\LaTeX, Herramientas de lineas de comando, Una hoja de vida} % A subtitle is optional and this may be deleted
 %\logo{\includegraphics[height=0.8cm]{universidaddelosandes.png}\vspace{220pt}} 
 \logo{\includegraphics[height=0.8cm]{universidaddelosandesciencias.png}}
 %\logo{\includegraphics[height=0.8cm]{universidaddelosandescolombia.png}
@@ -22,9 +22,9 @@
 {
 	\inst{1}%
 	Física   \\
-	Lectura $1$ Herramientas Computacionales \\
+	Lectura $2$ Herramientas Computacionales \\
 	Universidad de los Andes
-	}
+}
 \date{\today} % - Either use conference name or its abbreviation.
 \subject{PDF Information} % This is only inserted into the PDF information catalog. Can be left out. 
 %\setbeamercovered{transparent}
@@ -34,29 +34,34 @@
 	\maketitle
 	
 	\begin{frame}
-		\frametitle{Introducíon a Herramientas}
-		 \begin{block}
-		 	\centering
-		 	{Para esta clase utilizaremos unas notas escritas Alaminos, Martí y Merí  }
-		 \end{block}
-		 Este formato de presentación en \LaTeX{}  puede ser utilizado para futuras presentaciones. (Cultura del compartir y dar crédito ) 
-		 \[ \frac{\partial y}{\partial x} = 3xy \]
-	\end{frame}
-	\begin{frame}
-		\frametitle{Herramientas para la clase de hoy}
+		\frametitle{Repaso de la anterior clase de herramientas}
 		\begin{block}
 			\centering
-			{Links importantes }
+			{En la ultima clase aprendimos a crear documentos básicos para la presentación de tareas y reportes de laboratorios  }
+		\end{block}	
+		Para ello, debe crear un nuevo documento en \LaTeX que contenga las siguientes ecuaciones.
+		
+	\end{frame}
+	\begin{frame}
+		\frametitle{Actividad de Transcribir Ecuaciones}
+		\begin{block}
+			\centering
+			{Transcribir en un documento de clase \emph{Report}}
 		\end{block}
 		\begin{itemize}
-			\item \href{https://www.sharelatex.com/}{Sharelatex}
-			\item \href{http://detexify.kirelabs.org/classify.html	}{detexify}
-			\item \href{http://tex.stackexchange.com/}{Tex StackExchange}
-			\item \href{https://github.com/Davidnet/Uniandes-Beamer	}{Proyecto de Beamer}
-			
+			\item $ A = \left\lbrace f(x) | \iiint \vec{\Delta} f d\vec{s} = 0 \right\rbrace  $
+			\item 
+			\[ \dfrac{\left| d(x,y) - d(z,x) \right| }{\frac{1}{2}} < \epsilon \quad \forall \epsilon < 0 \]
+			\item $ L^2 = \left\lbrace f \in  \mathbb{R}^{\mathbb{R}} | \iint_{\infty}^{\infty}  f(x)dxdy \textrm{ es integrable y normalizable} \right\rbrace $			
 		\end{itemize}
-	
+		\[ \begin{pmatrix}
+		\dfrac{d}{dx_1} & \dfrac{d}{dx_2} & \ldots & \dfrac{d}{dx_n} \\
+		\dfrac{d}{dx_1} \left( \dfrac{d}{dx_1} \right) & \dfrac{d}{dx_2} \left( \dfrac{d}{dx_2} \right)  & \ldots & \dfrac{d}{dx_n} \left( \dfrac{d}{dx_n} \right) \\
+		\vdots & \vdots & \vdots \\
+		\dfrac{d}{dx_1} \ldots \left( \dfrac{d}{dx_1} \right) & \dfrac{d}{dx_2} \ldots \left( \dfrac{d}{dx_2} \right)  & \ldots & \dfrac{d}{dx_n} \ldots \left( \dfrac{d}{dx_n} \right) 
+		\end{pmatrix} \]
 	\end{frame}
+	
 	
 	
 \end{document}
